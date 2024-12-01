@@ -19,6 +19,7 @@ const addCart = gadget => {
     // get all previously saved gadget data
     const carts = getAllCarts()
     const isExist = carts.find(item => item.product_id == gadget.product_id)
+    // console.log(isExist);
     if (isExist) return toast.error('Gadget already exists!')
 
     carts.push(gadget)

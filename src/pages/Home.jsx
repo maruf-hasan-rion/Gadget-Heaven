@@ -6,7 +6,7 @@ import Categories from "../components/Categories";
 
 const Home = () => {
     const categories = useLoaderData()
-    console.log(categories)
+    // console.log(categories)
     return (
         <div >
             <div className="hero bg-[#9538E2] text-white rounded-3xl min-h-screen">

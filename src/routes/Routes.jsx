@@ -5,13 +5,15 @@ import Dashboard from "../pages/Dashboard.jsx";
 import MainLayout from "../mainLayout/MainLayout.jsx";
 import GadgetCards from "../components/GadgetCards.jsx";
 import GadgetDetails from "../pages/GadgetDetails.jsx";
-// import Carts from "../components/Carts.jsx";
-// import WishList from "../components/WishList.jsx";
+import ErrorPage from "../components/ErrorPage.jsx";
+import Carts from "../components/Carts.jsx";
+import WishList from "../components/WishList.jsx";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -39,18 +41,23 @@ const router = createBrowserRouter([
                 path: '/dashboard',
                 element: <Dashboard></Dashboard>,
                 loader: () => fetch('../gadgets.json'),
-                // children: [
-                //     {
-                //         path: '/carts',
-                //         element: <Carts></Carts>,
-                //         loader: () => fetch('../gadgets.json'),
-                //     },
-                //     {
-                //         path: '/wishlist',
-                //         element: <WishList></WishList>,
-                //         loader: () => fetch('../gadgets.json'),
-                //     },
-                // ],
+                children: [
+                    {
+                        path: '/dashboard',
+                        element: <Carts></Carts>,
+                        loader: () => fetch('../gadgets.json'),
+                    },
+                    {
+                        path: 'dashboard/cart',
+                        element: <Carts></Carts>,
+                        loader: () => fetch('../gadgets.json'),
+                    },
+                    {
+                        path: 'dashboard/wishList',
+                        element: <WishList></WishList>,
+                        loader: () => fetch('../gadgets.json'),
+                    },
+                ],
             },
             {
                 path: '/gadget/:product_id',

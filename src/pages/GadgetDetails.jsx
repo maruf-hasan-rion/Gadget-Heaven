@@ -27,10 +27,13 @@ const GadgetDetails = () => {
         specification
     } = gadget
 
-    //   Handle cart btn click
-    const handleAddCart = gadget => {
-        addCart(gadget)
-        setIsCart(true)
+    // //   Handle cart btn click
+    // const handleAddCart = gadget => {
+    //     addCart(gadget)
+    //     setIsCart(true)
+    // }
+    const handleAddCart = (id) => {
+        addCart(id);
     }
     return (
 
@@ -61,11 +64,11 @@ const GadgetDetails = () => {
                                 ))}
                         </ol>
                         <div className='flex items-center gap-8'>
-                            <button disabled={isCart} onClick={() => handleAddCart(gadget)}
+                            <button disabled={isCart} onClick={() => handleAddCart(product_id)}
                                 className='btn btn-warning'>Add To Carts
                             </button>
                             <button className="btn btn-ghost btn-circle ">
-                                <div className="indicator text-xl">
+                                <div className="indicator text-xl" /*onClick={() => handleAddWishList(gadget)}*/ >
                                     <MdFavoriteBorder></MdFavoriteBorder>
                                     {/* <span className="badge badge-xs badge-primary indicator-item"></span> */}
                                 </div>
