@@ -1,0 +1,32 @@
+[
+    {
+        "product_id": "101",
+        "product_title": "Gaming Laptop XYZ",
+        "category": "Computers"
+    },
+    {
+        "product_id": "103",
+        "product_title": "Smartphone ABC",
+        "category": "Phones"
+    },
+    {
+        "product_id": "105",
+        "product_title": "Smart Watch 123",
+        "category": "Smart Watches"
+    },
+    {
+        "product_id": "107",
+        "product_title": "Portable Charger 10,000mAh",
+        "category": "Chargers"
+    },
+    {
+        "product_id": "109",
+        "product_title": "Power Bank 20,000mAh",
+        "category": "Power Banks"
+    },
+    {
+        "product_id": "115",
+        "product_title": "Wireless Earbuds",
+        "category": "Accessories"
+    }
+]
