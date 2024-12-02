@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useLoaderData, useParams } from 'react-router-dom'
-import { addCart, getAllCarts } from '../utility'
+import { addCart, addWishList, getAllCarts } from '../utility'
 import { MdFavoriteBorder } from 'react-icons/md'
 
 const GadgetDetails = () => {
@@ -35,6 +35,9 @@ const GadgetDetails = () => {
     const handleAddCart = (id) => {
         addCart(id);
     }
+    const handleAddWishList = (id) => {
+        addWishList(id);
+    }
     return (
 
         <div>
@@ -68,7 +71,7 @@ const GadgetDetails = () => {
                                 className='btn btn-warning'>Add To Carts
                             </button>
                             <button className="btn btn-ghost btn-circle ">
-                                <div className="indicator text-xl" /*onClick={() => handleAddWishList(gadget)}*/ >
+                                <div className="indicator text-xl" onClick={() => handleAddWishList(product_id)}>
                                     <MdFavoriteBorder></MdFavoriteBorder>
                                     {/* <span className="badge badge-xs badge-primary indicator-item"></span> */}
                                 </div>
