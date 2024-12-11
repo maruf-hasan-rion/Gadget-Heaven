@@ -15,7 +15,7 @@ const WishList = () => {
 
         const wishList = allWishList.filter(gadget => storedWishListInt.includes(gadget.product_id));
         setWishList(wishList);
-    }, []);
+    }, [allWishList]);
 
     const handleDeleteWishList = (id) => {
         const updateWishlist = wishList.filter((p) => p.product_id != id)

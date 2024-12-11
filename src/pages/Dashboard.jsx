@@ -9,11 +9,11 @@ const Dashboard = () => {
             <div className="hero bg-[#9538E2] min-h-[250px] text-white">
                 <div className="hero-content text-center">
                     <div className="">
-                        <h1 className="text-4xl font-bold">DashBoard</h1>
+                        <h1 className="text-4xl font-bold">Dashboard</h1>
                         <p className="py-6 text-sm">
                             Explore the latest gadgets that will take your experience to the next level. From smart devices to <br /> the coolest accessories, we have it all!
                         </p>
-                        <div className="flex gap-16 justify-center">
+                        <div className="flex gap-10 justify-center">
                             <NavLink
 
                                 to='/dashboard/cart'>

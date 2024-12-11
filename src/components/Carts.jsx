@@ -10,16 +10,13 @@ const Carts = () => {
     // const [sort, setSort] = useState('');
     const allGadgets = useLoaderData();
 
-
     useEffect(() => {
         const storedGadgetsList = getAllCarts();
         const storedGadgetsListInt = storedGadgetsList.map(id => parseInt(id));
-        console.log(storedGadgetsList, storedGadgetsListInt, allGadgets);
-
+        // console.log(storedGadgetsList, storedGadgetsListInt, allGadgets);
         const gadgetList = allGadgets.filter(gadget => storedGadgetsListInt.includes(gadget.product_id));
         setGadgetList(gadgetList);
-
-    }, []);
+    }, [allGadgets]);
 
     const handleDelete = (id) => {
         const updateGadget = gadgetList.filter((p) => p.product_id != id)
@@ -28,6 +25,12 @@ const Carts = () => {
     const handleRemove = (id) => {
         console.log(id);
         removeCart(id);
+    }
+    const handleSort = sortBy=>{
+        if(sortBy=='price'){
+            const sorted =[...allGadgets].sort((a,b)=>b.price-a.price)
+            setGadgetList(sorted)
+        }
     }
     return (
         <div >
@@ -38,7 +41,7 @@ const Carts = () => {
                 </div>
                 <div className='flex justify-between items-center gap-2'>
                     <h1 className='text-xl font-bold'>Total Price: <span>price</span></h1>
-                    <button className='px-4 py-1 text-sm text-[#9538E2] border-2 border-[#9538E2] rounded-full font-semibold'>Sort by Price <img className="inline-flex" src={sort} alt="" /></button>
+                    <button className='px-4 py-1 text-sm text-[#9538E2] border-2 border-[#9538E2] rounded-full font-semibold' onClick={()=>handleSort('price')}>Sort by Price <img className="inline-flex" src={sort} alt="" /></button>
                     <button className="bg-gradient-to-r from-[#a044ff] to-[#6a11cb] text-white rounded-full px-6 py-2 text-sm">
                         Purchase
                     </button>
@@ -55,7 +58,7 @@ const Carts = () => {
                                 <div>
                                     <p className='text-xl font-bold'>{gadget.product_title}</p>
                                     <p className='text-sm text-[#13131399] py-2'>{gadget.description}</p>
-                                    <p className='text-lg font-bold text-[#09080FCC] pt-2'>Price:$ {gadget.price}</p>
+                                    <p className='text-lg font-bold text-[#09080FCC] pt-2'>Price: $ {gadget.price}</p>
                                 </div>
                             </div>
                             <div>

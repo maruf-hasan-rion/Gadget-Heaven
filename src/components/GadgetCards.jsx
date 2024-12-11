@@ -27,9 +27,9 @@ const GadgetCards = () => {
                     <Card key={gadget.product_id} gadget={gadget} />
                 ))}
             </div>
-            <button className='btn btn-warning' onClick={() => setGadgets(data)}>
+            {/* <button className='btn btn-warning' onClick={() => setGadgets(data)}>
                 View All
-            </button>
+            </button> */}
         </>
     )
 }

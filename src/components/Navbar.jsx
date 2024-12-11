@@ -26,18 +26,14 @@ const Navbar = () => {
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
 
-                        <NavLink className={({ isActive }) => `font-bold ${isActive ? 'text-warning' : 'hover:text-warning'}`} to='/'>Home
+                        <NavLink className="font-semibold" to='/'>Home
                         </NavLink>
                         <NavLink
-                            className={({ isActive }) =>
-                                `font-bold ${isActive ? 'text-warning' : 'hover:text-warning'}`
-                            }
+                            className="font-semibold"
                             to='/statistics'>Statistics
                         </NavLink>
                         <NavLink
-                            className={({ isActive }) =>
-                                `font-bold ${isActive ? 'text-warning' : 'hover:text-warning'}`
-                            }
+                            className="font-semibold"
                             to='/dashboard'
                         >
                             Dashboard
@@ -48,29 +44,25 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <NavLink className={({ isActive }) => `font-bold px-4 text-[#0B0B0BB3] ${isActive ? 'text-warning' : 'hover:text-warning'}`} to='/'>Home
+                    <NavLink className="font-semibold px-4" to='/'>Home
                     </NavLink>
                     <NavLink
-                        className={({ isActive }) =>
-                            `font-bold px-4 text-[#0B0B0BB3] ${isActive ? 'text-warning' : 'hover:text-warning'}`
-                        }
+                        className="font-semibold px-4"
                         to='/statistics'>Statistics
                     </NavLink>
                     <NavLink
-                        className={({ isActive }) =>
-                            `font-bold px-4 text-[#0B0B0BB3] ${isActive ? 'text-warning' : 'hover:text-warning'}`
-                        }
+                        className="font-semibold px-4"
                         to='/dashboard'
                     >
                         Dashboard
                     </NavLink>
                 </ul>
             </div>
-            <div className="navbar-end">
-                <button className="btn btn-ghost btn-circle text-xl">
+            <div className="navbar-end gap-2">
+                <button className="btn btn-ghost btn-circle text-xl border-2 border-[#0B0B0B1A]">
                     <IoCartOutline></IoCartOutline>
                 </button>
-                <button className="btn btn-ghost btn-circle ">
+                <button className="btn btn-ghost btn-circle border-2 border-[#0B0B0B1A]">
                     <div className="indicator text-xl">
                         <MdFavoriteBorder></MdFavoriteBorder>
                         {/* <span className="badge badge-xs badge-primary indicator-item"></span> */}
