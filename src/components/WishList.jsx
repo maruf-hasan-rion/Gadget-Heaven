@@ -11,7 +11,7 @@ const WishList = () => {
     useEffect(() => {
         const storedWishList = getAllWishList();
         const storedWishListInt = storedWishList.map(id => parseInt(id));
-        console.log(storedWishList, storedWishListInt, allWishList);
+        // console.log(storedWishList, storedWishListInt, allWishList);
 
         const wishList = allWishList.filter(gadget => storedWishListInt.includes(gadget.product_id));
         setWishList(wishList);

@@ -14,8 +14,8 @@ const ErrorPage = () => {
             Don&apos;t worry, our team is already on it.Please try refreshing
             the page or come back later.
           </p>
-          <Link to="/"><button className="bg-gradient-to-r from-[#a044ff] to-[#6a11cb] text-white rounded-full px-6 py-2 text-sm" >
-                        Back Home
+          <Link to="/"><button className="bg-gradient-to-r from-[#a044ff] to-[#6a11cb] text-white rounded-full px-10 py-4 text-sm font-bold" >
+                        Back to Home
                     </button></Link>
         </div>
     </div>

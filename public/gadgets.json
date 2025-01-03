@@ -11,7 +11,7 @@
             "RAM": "16GB",
             "Storage": "512GB SSD"
         },
-        "availability": true,
+        "availability": false,
         "rating": 4
     },
     {
@@ -49,7 +49,7 @@
         "product_title": "Basic Feature Phone",
         "product_image": "https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "category": "Phones",
-        "price": 49.99,
+        "price": 499.99,
         "description": "Simple, durable phone with long battery life and easy interface.",
         "specification": {
             "Battery Life": "2 weeks",
@@ -94,7 +94,7 @@
         "product_title": "Portable Charger 10,000mAh",
         "product_image": "https://images.pexels.com/photos/3921708/pexels-photo-3921708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "category": "Chargers",
-        "price": 29.99,
+        "price": 299.99,
         "description": "Compact 10,000mAh portable charger for fast, on-the-go charging.",
         "specification": {
             "Capacity": "10,000mAh",
@@ -109,7 +109,7 @@
         "product_title": "Fast Wall Charger",
         "product_image": "https://images.pexels.com/photos/3921708/pexels-photo-3921708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "category": "Chargers",
-        "price": 19.99,
+        "price": 199.99,
         "description": "Quick-charge wall adapter with multiple USB ports.",
         "specification": {
             "USB Ports": "2",
@@ -124,7 +124,7 @@
         "product_title": "Power Bank 20,000mAh",
         "product_image": "https://images.pexels.com/photos/16814788/pexels-photo-16814788/free-photo-of-man-charging-cellphone-with-powerbank.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "category": "Power Banks",
-        "price": 49.99,
+        "price": 491.99,
         "description": "High-capacity power bank with fast charging capabilities.",
         "specification": {
             "Capacity": "20,000mAh",
@@ -139,7 +139,7 @@
         "product_title": "Slim Power Bank 5,000mAh",
         "product_image": "https://images.pexels.com/photos/16814788/pexels-photo-16814788/free-photo-of-man-charging-cellphone-with-powerbank.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "category": "Power Banks",
-        "price": 19.99,
+        "price": 159.99,
         "description": "Compact and lightweight power bank for emergencies.",
         "specification": {
             "Capacity": "5,000mAh",
@@ -199,7 +199,7 @@
         "product_title": "Wireless Earbuds Pro",
         "product_image": "https://images.pexels.com/photos/3748787/pexels-photo-3748787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "category": "Audio",
-        "price": 149.99,
+        "price": 119.99,
         "description": "High-quality wireless earbuds with noise cancellation.",
         "specification": {
             "Battery Life": "24 hours",
@@ -223,5 +223,38 @@
         },
         "availability": true,
         "rating": 4
-    }
+    },
+    {
+    "product_id": 116,
+    "product_title": "Workstation Laptop X Pro",
+    "product_image": "https://images.pexels.com/photos/1181307/pexels-photo-1181307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "category": "Computers",
+    "price": 1899.99,
+    "description": "Powerful workstation laptop designed for professionals requiring high computational power.",
+    "specification": {
+        "Processor": "Intel Xeon W",
+        "RAM": "32GB",
+        "Storage": "1TB SSD",
+        "Graphics Card": "NVIDIA Quadro RTX 4000"
+    },
+    "availability": true,
+    "rating": 5
+},
+{
+    "product_id": 117,
+    "product_title": "Compact Mini PC Z",
+    "product_image": "https://images.pexels.com/photos/1181307/pexels-photo-1181307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "category": "Computers",
+    "price": 499.99,
+    "description": "Small form-factor PC perfect for basic tasks and media consumption.",
+    "specification": {
+        "Processor": "AMD Ryzen 3",
+        "RAM": "8GB",
+        "Storage": "256GB SSD",
+        "Ports": "HDMI, USB-C, USB 3.0"
+    },
+    "availability": true,
+    "rating": 4
+}
+
 ]

@@ -14,7 +14,7 @@ const Card = ({ gadget }) => {
                 <div className='p-4 flex flex-col gap-2'>
                     <h1 className='text-lg font-semibold'>{product_title}</h1>
                     <p>Price: {price}k</p>
-                    <Link to={`/gadget/${product_id}`}> <button className='btn text-[#9538E2] border-2 border-[#9538E2] rounded-full'>View Details</button></Link>
+                    <Link to={`/gadget/${product_id}`}> <button className='btn text-[#9538E2] border border-[#9538E2] rounded-full'>View Details</button></Link>
                 </div>
             </div>
         </div>

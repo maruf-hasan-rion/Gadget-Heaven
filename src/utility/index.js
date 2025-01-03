@@ -34,9 +34,17 @@ const removeCart = (id) => {
     const carts = getAllCarts()
     const remaining = carts.filter(iD => iD != id)
     localStorage.setItem('carts', JSON.stringify(remaining))
-    console.log('r:', remaining);
+    // console.log('r:', remaining);
     toast.success('Successfully removed from Cart!')
 }
+// const removeAllCart = () => {
+//     // get all previously saved coffee data
+//     const carts = getAllCarts()
+//     // const remaining = carts.filter(iD => iD != id)
+//     localStorage.setItem('carts', JSON.stringify())
+//     // console.log('r:', remaining);
+//     toast.success('Successfully removed All Cart!')
+// }
 
 
 

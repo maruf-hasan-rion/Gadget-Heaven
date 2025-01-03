@@ -1,11 +1,16 @@
 
+import { Helmet } from 'react-helmet-async';
 import { NavLink, Outlet } from 'react-router-dom';
 import 'react-tabs/style/react-tabs.css';
 
 
 const Dashboard = () => {
+  
     return (
         <div>
+              <Helmet>
+    <title>Dashboard</title>
+    </Helmet>
             <div className="hero bg-[#9538E2] min-h-[250px] text-white">
                 <div className="hero-content text-center">
                     <div className="">

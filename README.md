@@ -39,7 +39,7 @@ This project leverages essential React concepts:
 
 ## 📊 Data Management
 
-- **State Management**: Implemented using **Context API** to handle cart and wishlist data.
+- **State Management**: Implemented using **Local Storage** to handle cart and wishlist data.
 - **Local Storage**: Used for persisting data like the shopping cart and wishlist across browser sessions.
 
 ## 📂 Project Structure
@@ -48,10 +48,17 @@ This project leverages essential React concepts:
 src/
 ├── components/        # Reusable React components (Navbar, ProductCard, FilterSidebar)
 ├── pages/             # Main pages (Home, ProductDetails, Cart, Wishlist)
-├── context/           # Context API for cart and wishlist management
-├── hooks/             # Custom hooks (e.g., useCart, useWishlist)
-├── utils/             # Helper functions for API calls and data formatting
+├── utility/           # Helper functions for API calls and data formatting
 ├── styles/            # CSS or styled-components for consistent design
 ├── App.js             # Main app entry point
 └── index.js           # React DOM rendering
 ```
+
+## 🌐 Live Demo
+
+Check out the live version here: [GadgetHaven](https://elegant-moxie-be6d7e.netlify.app/)  
+(Note: The live URL will be updated upon deployment.)
+
+## Requirement Document Link
+
+-

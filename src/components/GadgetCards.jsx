@@ -3,7 +3,6 @@ import Card from './Card'
 import { useEffect, useState } from 'react'
 
 const GadgetCards = () => {
-    // const navigate = useNavigate()
 
     const data = useLoaderData()
     const { category } = useParams()

@@ -8,6 +8,7 @@ import GadgetDetails from "../pages/GadgetDetails.jsx";
 import ErrorPage from "../components/ErrorPage.jsx";
 import Carts from "../components/Carts.jsx";
 import WishList from "../components/WishList.jsx";
+import AboutUs from "../pages/AboutUs.jsx";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
             {
                 path: '/statistics',
                 element: <Statistics></Statistics>
+                // loader: () => fetch('../coffees.json'),
+            },
+            {
+                path: '/aboutUs',
+                element: <AboutUs></AboutUs>
                 // loader: () => fetch('../coffees.json'),
             },
             {

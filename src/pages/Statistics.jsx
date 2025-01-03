@@ -1,4 +1,5 @@
 // import React, { PureComponent } from 'react';
+import { Helmet } from 'react-helmet-async';
 import {
     ComposedChart,
     Line,
@@ -16,6 +17,7 @@ import {
 
 
 const Statistics = () => {
+   
     const data = [
         {
             name: 'Page A',
@@ -73,6 +75,10 @@ const Statistics = () => {
     //     { name: "Jack", age: 19 }
     // ];
     return (
+        <div>
+<Helmet>
+<title>Statistics</title>
+</Helmet>
         <div className='w-full'>
             <ComposedChart
                 width={500}
@@ -95,6 +101,7 @@ const Statistics = () => {
                 <Line type="monotone" dataKey="uv" stroke="#ff7300" />
                 <Scatter dataKey="cnt" fill="red" />
             </ComposedChart>
+        </div>
         </div>
 
 
